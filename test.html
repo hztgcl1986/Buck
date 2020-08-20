@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+</head>
+<body>
+
+    <button id="b2" onclick="add()" title="222">Ok</button>
+
+    <script>
+        function add() {
+            var div = document.getElementById("b2");
+            b2.title = "ABC";
+        }
+
+        document.addEventListener("DOMAttrModified", function (evt) {
+            console.log("DOMAttrModified");
+            console.log(evt);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"cmMiddleware":
+	{
+		"message": "中间件",
+		"description": "右键菜单——【中间件】"
+	},
+
+	"cmSmartCard":
+	{
+		"message": "插入智能卡",
+		"description": "右键菜单——复选框——【插入智能卡】"
+	}
+}

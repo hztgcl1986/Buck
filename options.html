@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Options</title>
+    <style>
+        .tip {
+            color: #ff0000;
+        }
+    </style>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h4>水印处理方法</h4>
+        <p>
+            <input v-model="maskType" id="type0" name="type" type="radio" value="delete" />
+            <label for="type0">删除</label>
+        </p>
+
+        <p>
+            <input v-model="maskType" id="type1" name="type" type="radio" value="replace" />
+            <label for="type1">替换</label>
+            &nbsp;&nbsp;<input v-show="showText" v-model="replaceText" type="text" placeholder="请输入替换内容" />
+        </p>
+
+        <p>
+            <button v-on:click="save">保存</button>
+            <span class="tip">{{ tipMsg }}</span>
+        </p>
+    </div>
+
+    <script src="js/options.js"></script>
+</body>
+</html>
